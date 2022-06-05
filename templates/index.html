@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Cape Town Property Valuation</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<br/>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      	<h1>City of Cape Town Property Valuation Tool</h1>
+		<form action="/prediction" method="get">
+			<label for="size">Size</label>
+			<input id="size" type="number" name="size" required />
+
+			<label for="bed">Bedrooms</label>
+			<input id="bed" type="number" name="bed" required />
+
+			<label for="bath">Bathrooms</label>
+			<input id="bath" type="number" name="bath" required />
+
+			<label for="parking">Parking</label>
+			<input id="parking" type="number" name="parking" required />
+
+			<input type="submit" name="submit" value="Submit" />
+		</form>
+	  </div>
+    </div>
+  </div>
+</body>
